@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peptide & Wellness Information UK</title>
+<meta name="description" content="Science-based educational information about retatrutide research, GHK-Cu, BPC-157, TB-500, NAD+ and vitamin B12.">
+<style>
+:root{
+  --bg:#07090b; --panel:#10151a; --text:#f7f7f7; --muted:#b8c0c7;
+  --gold:#d7a848; --blue:#38a8df; --pink:#d85ec8; --teal:#54d5c6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#050607,#0b1014);color:var(--text);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.hero{padding:70px 0 46px;text-align:center;border-bottom:1px solid #2b2b2b;background:
+radial-gradient(circle at 20% 20%,rgba(56,168,223,.16),transparent 30%),
+radial-gradient(circle at 80% 25%,rgba(215,168,72,.13),transparent 32%)}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:12px 0}
+.subtitle{max-width:760px;margin:0 auto;color:var(--muted);font-size:18px}
+.lang{margin-top:24px;display:flex;gap:10px;justify-content:center}
+.lang button{background:#111820;color:#fff;border:1px solid #38434c;border-radius:999px;padding:10px 16px;cursor:pointer}
+.lang button.active{border-color:var(--gold);color:#ffd985}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,9,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid #282d31}
+nav .wrap{display:flex;gap:18px;overflow:auto;padding-top:12px;padding-bottom:12px}
+nav a{white-space:nowrap;text-decoration:none;color:#dbe1e6;font-size:14px}
+section{padding:54px 0;border-bottom:1px solid #24292d}
+h2{font-size:clamp(28px,4vw,42px);margin:0 0 14px}
+.lead{color:var(--muted);max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.card{background:linear-gradient(180deg,#11171d,#0c1115);border:1px solid #27313a;border-radius:20px;padding:24px}
+.card h3{margin-top:0;font-size:23px}
+.blue{border-top:3px solid var(--blue)} .pink{border-top:3px solid var(--pink)} .teal{border-top:3px solid var(--teal)}
+.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:#151b20;color:#d5dbe0;font-size:12px;margin-bottom:10px}
+.notice{background:#17130a;border:1px solid #6a5527;border-radius:16px;padding:18px 20px;color:#f4e2b1}
+.contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.contact{background:#11161b;border:1px solid #2d3740;border-radius:18px;padding:20px}
+.phone{font-size:20px;font-weight:700;color:#fff}
+.small{font-size:13px;color:var(--muted)}
+.brandbox{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.brand{border:1px solid #34414a;border-radius:18px;padding:22px;background:#0d1318}
+footer{padding:34px 0 50px;color:#9ea8b0;font-size:13px}
+.lt{display:none}
+body.show-lt .en{display:none}
+body.show-lt .lt{display:block}
+body.show-lt span.lt{display:inline}
+body:not(.show-lt) span.en{display:inline}
+body:not(.show-lt) span.lt{display:none}
+@media(max-width:800px){.grid,.contacts,.brandbox{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">UK • Science-based educational information</div>
+    <h1>Peptide & Wellness Information UK</h1>
+    <p class="subtitle en">Clear, cautious information about investigational peptides, NAD+ and vitamin B12 — focused on research, safety and informed choices.</p>
+    <p class="subtitle lt">Aiški ir atsargi informacija apie tiriamus peptidus, NAD+ ir vitaminą B12 — dėmesys mokslui, saugumui ir informuotam pasirinkimui.</p>
+    <div class="lang">
+      <button id="enBtn" class="active" onclick="setLang('en')">English</button>
+      <button id="ltBtn" onclick="setLang('lt')">Lietuvių</button>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#research">Research topics</a>
+    <a href="#brands">Brands on packaging</a>
+    <a href="#safety">Safety</a>
+    <a href="#contacts">General information contacts</a>
+  </div>
+</nav>
+
+<main>
+<section id="research">
+<div class="wrap">
+  <h2 class="en">Research topics</h2><h2 class="lt">Tyrimų temos</h2>
+  <p class="lead en">This page is educational. It does not sell, prescribe or recommend investigational medicines. Evidence levels differ between compounds and are described cautiously.</p>
+  <p class="lead lt">Šis puslapis yra edukacinis. Jis neparduoda, neskiria ir nerekomenduoja tiriamųjų vaistų. Įrodymų lygis tarp junginių skiriasi, todėl informacija pateikiama atsargiai.</p>
+
+  <div class="grid">
+    <article class="card blue">
+      <span class="tag">Investigational compound</span>
+      <h3>Retatrutide</h3>
+      <p class="en">A triple GIP / GLP‑1 / glucagon receptor agonist being studied in clinical trials. It is not presented here as an approved routine treatment.</p>
+      <p class="lt">Trigubas GIP / GLP‑1 / gliukagono receptorių agonistas, tiriamas klinikiniuose tyrimuose. Čia jis nepateikiamas kaip patvirtintas įprastinis gydymas.</p>
+      <p class="small en">Focus: mechanism, clinical-trial evidence, adverse effects, limitations.</p>
+      <p class="small lt">Dėmesys: veikimo mechanizmas, klinikinių tyrimų duomenys, nepageidaujami reiškiniai, ribotumai.</p>
+    </article>
+
+    <article class="card pink">
+      <span class="tag">Research compounds</span>
+      <h3>GHK‑Cu • BPC‑157 • TB‑500</h3>
+      <p class="en">These compounds are discussed separately because their evidence, regulatory status and safety data are not the same. Claims should not be treated as guaranteed outcomes.</p>
+      <p class="lt">Šie junginiai aptariami atskirai, nes jų įrodymai, reguliacinis statusas ir saugumo duomenys skiriasi. Teiginiai neturėtų būti laikomi garantuotais rezultatais.</p>
+      <p class="small en">Packaging shown to us listed: GHK‑Cu 80 mg, BPC‑157 16 mg, TB‑500 16 mg.</p>
+      <p class="small lt">Mums parodytoje pakuotėje buvo nurodyta: GHK‑Cu 80 mg, BPC‑157 16 mg, TB‑500 16 mg.</p>
+    </article>
+
+    <article class="card teal">
+      <span class="tag">Metabolism & nutrition</span>
+      <h3>NAD+ & Vitamin B12</h3>
+      <p class="en">NAD+ is a coenzyme involved in cellular metabolism. Vitamin B12 has established nutritional and haematological roles. Product-specific benefits must not be assumed from those biological roles alone.</p>
+      <p class="lt">NAD+ yra kofermentas, dalyvaujantis ląstelių metabolizme. Vitaminas B12 turi gerai žinomą mitybinį ir hematologinį vaidmenį. Vien iš šių biologinių funkcijų negalima daryti išvados apie konkretaus produkto naudą.</p>
+      <p class="small en">Packaging shown to us listed: 1000 mg NAD+ + 4000 mcg B12.</p>
+      <p class="small lt">Mums parodytoje pakuotėje buvo nurodyta: 1000 mg NAD+ + 4000 mcg B12.</p>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="brands">
+<div class="wrap">
+  <h2 class="en">Names appearing on packaging</h2><h2 class="lt">Pavadinimai, nurodyti ant pakuočių</h2>
+  <p class="lead en">The packaging provided to us displays the names <strong>Alluvi Healthcare</strong> and <strong>Synedica</strong>. This page does not independently verify manufacturer identity, authenticity, purity, sterility or product quality.</p>
+  <p class="lead lt">Mums pateiktose pakuotėse matomi pavadinimai <strong>Alluvi Healthcare</strong> ir <strong>Synedica</strong>. Šis puslapis nepriklausomai nepatvirtina gamintojo tapatybės, autentiškumo, grynumo, sterilumo ar produkto kokybės.</p>
+  <div class="brandbox">
+    <div class="brand"><h3>Alluvi Healthcare</h3><p class="small en">Brand/manufacturer name shown on packaging supplied for reference.</p><p class="small lt">Prekės ženklo / gamintojo pavadinimas, matomas pateiktoje pakuotėje.</p></div>
+    <div class="brand"><h3>Synedica</h3><p class="small en">Brand/manufacturer name shown on packaging supplied for reference.</p><p class="small lt">Prekės ženklo / gamintojo pavadinimas, matomas pateiktoje pakuotėje.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="safety">
+<div class="wrap">
+  <h2 class="en">Important safety information</h2><h2 class="lt">Svarbi saugumo informacija</h2>
+  <div class="notice">
+    <p class="en"><strong>Educational information only.</strong> This website is not medical advice, diagnosis or a treatment recommendation. Some compounds discussed are investigational and may not be authorised for routine medical use in the UK. Always discuss medicines, injections, supplements and unexplained symptoms with a suitably qualified healthcare professional.</p>
+    <p class="lt"><strong>Tik edukacinė informacija.</strong> Ši svetainė nėra medicininė konsultacija, diagnozė ar gydymo rekomendacija. Kai kurie čia aptariami junginiai yra tiriamieji ir gali būti nepatvirtinti įprastam medicininiam naudojimui JK. Vaistus, injekcijas, papildus ir neaiškius simptomus visada aptarkite su kvalifikuotu sveikatos priežiūros specialistu.</p>
+  </div>
+</div>
+</section>
+
+<section id="contacts">
+<div class="wrap">
+  <h2 class="en">General information contacts</h2><h2 class="lt">Bendros informacijos kontaktai</h2>
+  <p class="lead en">These contacts are listed for general information and navigation of educational material, not as a route to purchase or obtain investigational medicines.</p>
+  <p class="lead lt">Šie kontaktai skirti bendrai informacijai ir pagalbai orientuojantis edukacinėje medžiagoje, o ne tiriamųjų vaistų įsigijimui.</p>
+  <div class="contacts">
+    <div class="contact">
+      <h3>Rolandas Baranauskas</h3>
+      <div class="phone">07576 996570</div>
+      <div>London</div>
+      <p class="small en">General information contact</p><p class="small lt">Bendros informacijos kontaktas</p>
+    </div>
+    <div class="contact">
+      <h3>Sigita Peciuliene</h3>
+      <div class="phone">07526 221019</div>
+      <div>Nottingham</div>
+      <p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p>
+    </div>
+    <div class="contact">
+      <h3>Aurelija Bakunaite</h3>
+      <div class="phone">07482 424524</div>
+      <div>UK</div>
+      <p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+  <p>Peptide & Wellness Information UK • Science-based educational information</p>
+  <p class="small en">Before publishing, add links to primary scientific sources and review the page against current UK advertising and medicines rules.</p>
+  <p class="small lt">Prieš publikuojant pridėkite nuorodas į pirminius mokslinius šaltinius ir patikrinkite puslapį pagal tuo metu galiojančias JK vaistų ir reklamos taisykles.</p>
+</div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.body.classList.toggle('show-lt', lang === 'lt');
+  document.getElementById('enBtn').classList.toggle('active', lang === 'en');
+  document.getElementById('ltBtn').classList.toggle('active', lang === 'lt');
+}
+</script>
+</body>
+</html>
