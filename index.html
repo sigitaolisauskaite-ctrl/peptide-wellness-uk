@@ -4,179 +4,268 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Peptide & Wellness Information UK</title>
-<meta name="description" content="Science-based educational information about retatrutide research, GHK-Cu, BPC-157, TB-500, NAD+ and vitamin B12.">
+<meta name="description" content="Science-based educational information for a UK audience about retatrutide research, selected peptide compounds, NAD+ and vitamin B12.">
 <style>
 :root{
-  --bg:#07090b; --panel:#10151a; --text:#f7f7f7; --muted:#b8c0c7;
-  --gold:#d7a848; --blue:#38a8df; --pink:#d85ec8; --teal:#54d5c6;
+  --bg:#060708; --panel:#0f1419; --panel2:#121a20; --text:#f7f7f7; --muted:#b7c0c8;
+  --gold:#d6a545; --gold2:#f0c46c; --blue:#35a7df; --pink:#d85ec9; --teal:#51d4c4; --line:#263039;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#050607,#0b1014);color:var(--text);line-height:1.55}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:
+radial-gradient(circle at 15% 5%,rgba(53,167,223,.10),transparent 28%),
+radial-gradient(circle at 85% 10%,rgba(214,165,69,.10),transparent 30%),
+linear-gradient(180deg,#050607,#0a0f13);color:var(--text);line-height:1.58}
 a{color:inherit}
-.wrap{max-width:1100px;margin:auto;padding:0 20px}
-.hero{padding:70px 0 46px;text-align:center;border-bottom:1px solid #2b2b2b;background:
-radial-gradient(circle at 20% 20%,rgba(56,168,223,.16),transparent 30%),
-radial-gradient(circle at 80% 25%,rgba(215,168,72,.13),transparent 32%)}
-.kicker{color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:12px 0}
-.subtitle{max-width:760px;margin:0 auto;color:var(--muted);font-size:18px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+.hero{padding:78px 0 48px;text-align:center;border-bottom:1px solid var(--line)}
+.brand{font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.02;margin:14px 0 18px}
+.subtitle{max-width:790px;margin:0 auto;color:var(--muted);font-size:18px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.pill{border:1px solid #3a4650;background:#0d141a;border-radius:999px;padding:8px 13px;font-size:13px;color:#dce3e8}
 .lang{margin-top:24px;display:flex;gap:10px;justify-content:center}
-.lang button{background:#111820;color:#fff;border:1px solid #38434c;border-radius:999px;padding:10px 16px;cursor:pointer}
-.lang button.active{border-color:var(--gold);color:#ffd985}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,9,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid #282d31}
-nav .wrap{display:flex;gap:18px;overflow:auto;padding-top:12px;padding-bottom:12px}
-nav a{white-space:nowrap;text-decoration:none;color:#dbe1e6;font-size:14px}
-section{padding:54px 0;border-bottom:1px solid #24292d}
-h2{font-size:clamp(28px,4vw,42px);margin:0 0 14px}
-.lead{color:var(--muted);max-width:850px}
+.lang button{background:#10171d;color:#fff;border:1px solid #3b4650;border-radius:999px;padding:10px 18px;cursor:pointer}
+.lang button.active{border-color:var(--gold);color:#ffdb8a}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,9,11,.95);backdrop-filter:blur(9px);border-bottom:1px solid #252c31}
+nav .wrap{display:flex;gap:19px;overflow:auto;padding-top:12px;padding-bottom:12px}
+nav a{white-space:nowrap;text-decoration:none;color:#dbe2e8;font-size:14px}
+section{padding:58px 0;border-bottom:1px solid #22282d}
+h2{font-size:clamp(29px,4vw,44px);margin:0 0 12px}
+h3{font-size:22px}
+.lead{color:var(--muted);max-width:900px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-.card{background:linear-gradient(180deg,#11171d,#0c1115);border:1px solid #27313a;border-radius:20px;padding:24px}
-.card h3{margin-top:0;font-size:23px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
 .blue{border-top:3px solid var(--blue)} .pink{border-top:3px solid var(--pink)} .teal{border-top:3px solid var(--teal)}
-.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:#151b20;color:#d5dbe0;font-size:12px;margin-bottom:10px}
-.notice{background:#17130a;border:1px solid #6a5527;border-radius:16px;padding:18px 20px;color:#f4e2b1}
+.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:#151b20;color:#d5dbe0;font-size:12px;margin-bottom:9px}
+.evidence{display:inline-block;margin-top:8px;padding:4px 9px;border-radius:999px;background:#10171d;border:1px solid #36424b;color:#cbd4dc;font-size:12px}
+.notice{background:#17130a;border:1px solid #685126;border-radius:17px;padding:19px 21px;color:#f2e1b3}
+.safe{background:#0d1715;border:1px solid #294d46;border-radius:17px;padding:19px 21px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.source-card{background:#0f151a;border:1px solid #29333b;border-radius:18px;padding:20px}
+.source-card a{color:#9fd8ff}
+.source-card p{margin-bottom:7px}
 .contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
-.contact{background:#11161b;border:1px solid #2d3740;border-radius:18px;padding:20px}
-.phone{font-size:20px;font-weight:700;color:#fff}
+.contact{background:#10161b;border:1px solid #2a353d;border-radius:18px;padding:20px}
+.phone{font-size:20px;font-weight:700}
 .small{font-size:13px;color:var(--muted)}
-.brandbox{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
-.brand{border:1px solid #34414a;border-radius:18px;padding:22px;background:#0d1318}
-footer{padding:34px 0 50px;color:#9ea8b0;font-size:13px}
 .lt{display:none}
 body.show-lt .en{display:none}
 body.show-lt .lt{display:block}
 body.show-lt span.lt{display:inline}
 body:not(.show-lt) span.en{display:inline}
 body:not(.show-lt) span.lt{display:none}
-@media(max-width:800px){.grid,.contacts,.brandbox{grid-template-columns:1fr}}
+footer{padding:36px 0 54px;color:#99a5ad;font-size:13px}
+@media(max-width:820px){.grid,.two,.contacts,.hero-grid{grid-template-columns:1fr!important}.hero-grid h1{text-align:center!important}.hero-grid .pills{justify-content:center!important}.hero-grid{text-align:center!important}}
 </style>
 </head>
 <body>
 <header class="hero">
-  <div class="wrap">
-    <div class="kicker">UK • Science-based educational information</div>
-    <h1>Peptide & Wellness Information UK</h1>
-    <p class="subtitle en">Clear, cautious information about investigational peptides, NAD+ and vitamin B12 — focused on research, safety and informed choices.</p>
-    <p class="subtitle lt">Aiški ir atsargi informacija apie tiriamus peptidus, NAD+ ir vitaminą B12 — dėmesys mokslui, saugumui ir informuotam pasirinkimui.</p>
-    <div class="lang">
-      <button id="enBtn" class="active" onclick="setLang('en')">English</button>
-      <button id="ltBtn" onclick="setLang('lt')">Lietuvių</button>
+<div class="wrap">
+  <div class="brand">Peptide & Wellness Information UK</div>
+  <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;text-align:left;margin-top:18px" class="hero-grid">
+    <div>
+      <h1 style="text-align:left">Knowledge first.<br>Claims second.</h1>
+  <p class="subtitle en">A cautious, UK-focused educational page about retatrutide research, selected peptide compounds, NAD+ and vitamin B12 — clearly separating established facts from early or uncertain evidence.</p>
+  <p class="subtitle lt">Atsargus, JK auditorijai skirtas edukacinis puslapis apie retatrutido tyrimus, pasirinktus peptidinius junginius, NAD+ ir vitaminą B12 — aiškiai atskiriant patvirtintus faktus nuo ankstyvų ar neaiškių įrodymų.</p>
+      <div class="pills" style="justify-content:flex-start">
+        <span class="pill">Research</span><span class="pill">Safety</span><span class="pill">Evidence levels</span><span class="pill">UK context</span>
+      </div>
+    </div>
+    <div style="background:
+      radial-gradient(circle at 30% 30%,rgba(53,167,223,.32),transparent 34%),
+      radial-gradient(circle at 72% 38%,rgba(216,94,201,.30),transparent 30%),
+      radial-gradient(circle at 50% 72%,rgba(214,165,69,.28),transparent 32%),
+      linear-gradient(145deg,#0f151b,#090d11);
+      border:1px solid #2f3941;border-radius:28px;min-height:330px;padding:28px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 24px 60px rgba(0,0,0,.28)">
+      <div style="font-size:13px;letter-spacing:.16em;color:#e9c36e;text-transform:uppercase;margin-bottom:14px">Three research areas</div>
+      <div style="font-size:34px;font-weight:800;line-height:1.1;margin-bottom:12px">RETATRUTIDE</div>
+      <div style="font-size:28px;font-weight:800;line-height:1.1;margin-bottom:12px">GLOW SKIN</div>
+      <div style="font-size:28px;font-weight:800;line-height:1.1">NAD+ & B12</div>
+      <div style="margin-top:20px;color:#b9c3ca">Evidence • Safety • Clear explanations</div>
     </div>
   </div>
+  <div class="lang">
+    <button id="enBtn" class="active" onclick="setLang('en')">English</button>
+    <button id="ltBtn" onclick="setLang('lt')">Lietuvių</button>
+  </div>
+</div>
 </header>
 
-<nav>
-  <div class="wrap">
-    <a href="#research">Research topics</a>
-    <a href="#brands">Brands on packaging</a>
-    <a href="#safety">Safety</a>
-    <a href="#contacts">General information contacts</a>
-  </div>
-</nav>
+<nav><div class="wrap">
+<a href="#topics">Topics</a><a href="#retatrutide">Retatrutide</a><a href="#glow">GLOW SKIN</a><a href="#nad">NAD+ & B12</a><a href="#uk">UK safety</a><a href="#sources">Sources</a><a href="#faq">FAQ</a><a href="#contacts">Contacts</a>
+</div></nav>
 
 <main>
-<section id="research">
-<div class="wrap">
-  <h2 class="en">Research topics</h2><h2 class="lt">Tyrimų temos</h2>
-  <p class="lead en">This page is educational. It does not sell, prescribe or recommend investigational medicines. Evidence levels differ between compounds and are described cautiously.</p>
-  <p class="lead lt">Šis puslapis yra edukacinis. Jis neparduoda, neskiria ir nerekomenduoja tiriamųjų vaistų. Įrodymų lygis tarp junginių skiriasi, todėl informacija pateikiama atsargiai.</p>
+<section id="topics"><div class="wrap">
+<h2 class="en">What this page covers</h2><h2 class="lt">Ką aptaria šis puslapis</h2>
+<p class="lead en">This page is educational only. It does not sell, prescribe or recommend investigational medicines. Evidence quality varies substantially between compounds, so each topic is described conservatively.</p>
+<p class="lead lt">Šis puslapis yra tik edukacinis. Jis neparduoda, neskiria ir nerekomenduoja tiriamųjų vaistų. Skirtingų junginių įrodymų kokybė labai skiriasi, todėl informacija pateikiama atsargiai.</p>
+<div class="grid">
+<article class="card blue"><span class="tag">Investigational medicine</span><h3>Retatrutide</h3><p class="en">A triple GIP / GLP‑1 / glucagon receptor agonist being studied in Phase 3 trials. It is not yet approved for public use.</p><p class="lt">Trigubas GIP / GLP‑1 / gliukagono receptorių agonistas, tiriamas III fazės tyrimuose. Jis dar nėra patvirtintas viešam vartojimui.</p><span class="evidence">Human Phase 3 evidence</span></article>
+<article class="card pink"><span class="tag">Research compounds</span><h3>GLOW SKIN</h3>
+<p><strong>GHK‑Cu • BPC‑157 • TB‑500</strong></p>
+<p class="en">Research into skin rejuvenation, healthy-ageing &amp; tissue recovery</p>
+<p class="lt">Odos atsinaujinimo, sveiko senėjimo ir audinių atsistatymo tyrimai</p><p class="en">These compounds have different evidence bases. For several proposed uses, preclinical research is stronger than reliable human clinical evidence.</p><p class="lt">Šių junginių įrodymų bazė skiriasi. Daugeliui siūlomų paskirčių ikiklinikiniai duomenys yra stipresni nei patikimi klinikiniai žmonių tyrimai.</p><span class="evidence">Mixed / limited clinical evidence</span></article>
+<article class="card teal"><span class="tag">Metabolism & nutrition</span><h3>NAD+ & Vitamin B12</h3><p class="en">NAD+ is central to cellular metabolism. Vitamin B12 has well-established nutritional roles. Wellness claims should not be inferred automatically from these biological functions.</p><p class="lt">NAD+ yra svarbus ląstelių metabolizmui. Vitaminas B12 turi gerai įrodytą mitybinį vaidmenį. Iš šių biologinių funkcijų negalima automatiškai daryti išvadų apie wellness naudą.</p><span class="evidence">Established biology; variable intervention evidence</span></article>
+</div>
+</div></section>
 
-  <div class="grid">
-    <article class="card blue">
-      <span class="tag">Investigational compound</span>
-      <h3>Retatrutide</h3>
-      <p class="en">A triple GIP / GLP‑1 / glucagon receptor agonist being studied in clinical trials. It is not presented here as an approved routine treatment.</p>
-      <p class="lt">Trigubas GIP / GLP‑1 / gliukagono receptorių agonistas, tiriamas klinikiniuose tyrimuose. Čia jis nepateikiamas kaip patvirtintas įprastinis gydymas.</p>
-      <p class="small en">Focus: mechanism, clinical-trial evidence, adverse effects, limitations.</p>
-      <p class="small lt">Dėmesys: veikimo mechanizmas, klinikinių tyrimų duomenys, nepageidaujami reiškiniai, ribotumai.</p>
-    </article>
-
-    <article class="card pink">
-      <span class="tag">Research compounds</span>
-      <h3>GHK‑Cu • BPC‑157 • TB‑500</h3>
-      <p class="en">These compounds are discussed separately because their evidence, regulatory status and safety data are not the same. Claims should not be treated as guaranteed outcomes.</p>
-      <p class="lt">Šie junginiai aptariami atskirai, nes jų įrodymai, reguliacinis statusas ir saugumo duomenys skiriasi. Teiginiai neturėtų būti laikomi garantuotais rezultatais.</p>
-      <p class="small en">Packaging shown to us listed: GHK‑Cu 80 mg, BPC‑157 16 mg, TB‑500 16 mg.</p>
-      <p class="small lt">Mums parodytoje pakuotėje buvo nurodyta: GHK‑Cu 80 mg, BPC‑157 16 mg, TB‑500 16 mg.</p>
-    </article>
-
-    <article class="card teal">
-      <span class="tag">Metabolism & nutrition</span>
-      <h3>NAD+ & Vitamin B12</h3>
-      <p class="en">NAD+ is a coenzyme involved in cellular metabolism. Vitamin B12 has established nutritional and haematological roles. Product-specific benefits must not be assumed from those biological roles alone.</p>
-      <p class="lt">NAD+ yra kofermentas, dalyvaujantis ląstelių metabolizme. Vitaminas B12 turi gerai žinomą mitybinį ir hematologinį vaidmenį. Vien iš šių biologinių funkcijų negalima daryti išvados apie konkretaus produkto naudą.</p>
-      <p class="small en">Packaging shown to us listed: 1000 mg NAD+ + 4000 mcg B12.</p>
-      <p class="small lt">Mums parodytoje pakuotėje buvo nurodyta: 1000 mg NAD+ + 4000 mcg B12.</p>
-    </article>
+<section id="quick"><div class="wrap">
+<h2 class="en">At a glance</h2><h2 class="lt">Trumpai ir aiškiai</h2>
+<div class="grid">
+  <div class="card blue">
+    <h3>Retatrutide</h3>
+    <p class="en"><strong>What it is:</strong> an investigational triple receptor agonist targeting GIP, GLP‑1 and glucagon pathways.</p>
+    <p class="lt"><strong>Kas tai:</strong> tiriamasis trigubas receptorių agonistas, veikiantis GIP, GLP‑1 ir gliukagono sistemas.</p>
+    <p class="small en">Best-supported area: human clinical-trial weight-management research.</p>
+    <p class="small lt">Stipriausia įrodymų sritis: žmonių klinikiniai svorio valdymo tyrimai.</p>
+  </div>
+  <div class="card pink">
+    <h3>GLOW SKIN</h3>
+    <p><strong>GHK‑Cu • BPC‑157 • TB‑500</strong></p>
+    <p class="en"><strong>Research focus:</strong> skin rejuvenation, healthy-ageing and tissue-recovery pathways.</p>
+    <p class="lt"><strong>Tyrimų kryptis:</strong> odos atsinaujinimas, sveikas senėjimas ir audinių atsistatymo procesai.</p>
+    <p class="small en">Evidence varies by compound and is not equally strong in humans.</p>
+    <p class="small lt">Įrodymų stiprumas skiriasi pagal junginį ir žmonių tyrimuose nėra vienodas.</p>
+  </div>
+  <div class="card teal">
+    <h3>NAD+ & B12</h3>
+    <p class="en"><strong>What they do biologically:</strong> NAD+ supports cellular metabolism; vitamin B12 has established roles in blood formation and neurological function.</p>
+    <p class="lt"><strong>Biologinis vaidmuo:</strong> NAD+ dalyvauja ląstelių metabolizme; vitaminas B12 svarbus kraujodarai ir nervų sistemos veiklai.</p>
+    <p class="small en">Important: biological roles do not automatically equal proven wellness benefits.</p>
+    <p class="small lt">Svarbu: biologinis vaidmuo savaime nereiškia įrodytos wellness naudos.</p>
   </div>
 </div>
-</section>
+</div></section>
 
-<section id="brands">
-<div class="wrap">
-  <h2 class="en">Names appearing on packaging</h2><h2 class="lt">Pavadinimai, nurodyti ant pakuočių</h2>
-  <p class="lead en">The packaging provided to us displays the names <strong>Alluvi Healthcare</strong> and <strong>Synedica</strong>. This page does not independently verify manufacturer identity, authenticity, purity, sterility or product quality.</p>
-  <p class="lead lt">Mums pateiktose pakuotėse matomi pavadinimai <strong>Alluvi Healthcare</strong> ir <strong>Synedica</strong>. Šis puslapis nepriklausomai nepatvirtina gamintojo tapatybės, autentiškumo, grynumo, sterilumo ar produkto kokybės.</p>
-  <div class="brandbox">
-    <div class="brand"><h3>Alluvi Healthcare</h3><p class="small en">Brand/manufacturer name shown on packaging supplied for reference.</p><p class="small lt">Prekės ženklo / gamintojo pavadinimas, matomas pateiktoje pakuotėje.</p></div>
-    <div class="brand"><h3>Synedica</h3><p class="small en">Brand/manufacturer name shown on packaging supplied for reference.</p><p class="small lt">Prekės ženklo / gamintojo pavadinimas, matomas pateiktoje pakuotėje.</p></div>
+<section id="retatrutide"><div class="wrap">
+<h2>Retatrutide</h2>
+<p class="lead en">Lilly describes retatrutide as an investigational once-weekly triple hormone receptor agonist that activates GIP, GLP‑1 and glucagon receptors. As of September 2026, it remains in Phase 3 development and is not approved for public use.</p>
+<p class="lead lt">Lilly retatrutidą apibūdina kaip tiriamą kartą per savaitę vartojamą trigubą hormoninių receptorių agonistą, aktyvinantį GIP, GLP‑1 ir gliukagono receptorius. 2026 m. rugsėjį jis tebėra III fazės kūrimo etape ir nėra patvirtintas viešam vartojimui.</p>
+<div class="two">
+<div class="source-card"><h3 class="en">What is established</h3><h3 class="lt">Kas žinoma</h3><p class="en">Phase 3 results have reported substantial average weight reduction in studied populations. These are clinical-trial results under controlled conditions and should not be presented as guaranteed outcomes for individuals.</p><p class="lt">III fazės rezultatuose tirtose populiacijose pranešta apie reikšmingą vidutinį svorio sumažėjimą. Tai klinikinių tyrimų duomenys kontroliuojamomis sąlygomis ir jų negalima pateikti kaip garantuoto rezultato kiekvienam žmogui.</p></div>
+<div class="source-card"><h3 class="en">What remains uncertain</h3><h3 class="lt">Kas dar neaišku</h3><p class="en">Safety, long-term outcomes and regulatory approval are still being evaluated. Products sold outside authorised trials cannot be assumed to match trial material in identity, purity, dose or sterility.</p><p class="lt">Saugumas, ilgalaikiai rezultatai ir reguliacinis patvirtinimas vis dar vertinami. Už oficialių tyrimų ribų parduodamų produktų negalima laikyti lygiaverčiais tyrimų medžiagai pagal tapatybę, grynumą, dozę ar sterilumą.</p></div>
+</div>
+</div></section>
+
+<section id="glow"><div class="wrap">
+<h2>GLOW SKIN</h2>
+<p class="lead"><strong>GHK‑Cu • BPC‑157 • TB‑500</strong></p>
+<p class="lead en">Research into skin rejuvenation, healthy-ageing &amp; tissue recovery</p>
+<p class="lead lt">Odos atsinaujinimo, sveiko senėjimo ir audinių atsistatymo tyrimai</p>
+<p class="lead en">These compounds are often grouped in wellness marketing, but they should be considered separately because their evidence and regulatory status differ.</p>
+<p class="lead lt">Šie junginiai dažnai grupuojami wellness rinkodaroje, tačiau juos reikėtų vertinti atskirai, nes jų įrodymai ir reguliacinis statusas skiriasi.</p>
+<div class="grid">
+<div class="card pink"><h3>GHK‑Cu</h3><p class="en">Laboratory and preclinical research has explored skin and tissue-regeneration pathways involving GHK‑Cu. Human evidence is more limited than many marketing claims suggest.</p><p class="lt">Laboratoriniai ir ikiklinikiniai tyrimai nagrinėjo GHK‑Cu vaidmenį su oda ir audinių regeneracija susijusiuose procesuose. Žmonių klinikiniai įrodymai yra ribotesni, nei dažnai teigiama reklamoje.</p></div>
+<div class="card pink"><h3>BPC‑157</h3><p class="en">BPC‑157 has attracted interest in tissue-repair research, but proposed benefits remain supported mainly by preclinical evidence rather than large, high-quality human trials.</p><p class="lt">BPC‑157 kelia susidomėjimą audinių atstatymo tyrimuose, tačiau siūloma nauda daugiausia grindžiama ikiklinikiniais duomenimis, o ne dideliais aukštos kokybės žmonių tyrimais.</p></div>
+<div class="card pink"><h3>TB‑500 / thymosin β4 context</h3><p class="en">Research on thymosin β4 has explored tissue repair and regeneration. TB‑500 products marketed in wellness settings should not automatically be treated as clinically proven equivalents.</p><p class="lt">Timozino β4 tyrimai nagrinėjo audinių atstatymą ir regeneraciją. Wellness rinkoje siūlomų TB‑500 produktų negalima automatiškai laikyti kliniškai įrodytais ekvivalentais.</p></div>
+</div>
+</div></section>
+
+<section id="nad"><div class="wrap">
+<h2>NAD+ & Vitamin B12</h2>
+<p class="lead en">NAD+ is an essential coenzyme involved in cellular energy metabolism and signalling. A 2026 systematic review found clear biological activity from NAD+-boosting approaches, but clinical effectiveness for anti-ageing or general wellness outcomes remains inconclusive, especially for injected NAD+ itself.</p>
+<p class="lead lt">NAD+ yra būtinas kofermentas, dalyvaujantis ląstelių energijos metabolizme ir signaliniuose procesuose. 2026 m. sisteminė apžvalga nustatė aiškų biologinį NAD+ didinimo strategijų poveikį, tačiau klinikinė nauda „anti-ageing“ ar bendrai savijautai tebėra neaiški, ypač kalbant apie leidžiamą NAD+.</p>
+<div class="safe">
+<p class="en"><strong>Vitamin B12:</strong> B12 has well-established roles in red blood cell formation, DNA synthesis and normal neurological function. Whether someone benefits from extra B12 depends on factors such as deficiency status, diet, absorption and medical context.</p>
+<p class="lt"><strong>Vitaminas B12:</strong> B12 turi gerai nustatytą vaidmenį raudonųjų kraujo kūnelių gamyboje, DNR sintezėje ir normalioje nervų sistemos veikloje. Papildomo B12 nauda priklauso nuo trūkumo, mitybos, pasisavinimo ir medicininio konteksto.</p>
+</div>
+</div></section>
+
+<section id="uk"><div class="wrap">
+<h2 class="en">UK safety and regulatory context</h2><h2 class="lt">JK saugumo ir reguliavimo kontekstas</h2>
+<div class="notice">
+<p class="en"><strong>Important:</strong> Retatrutide is not authorised for public use. UK regulators have warned businesses against promoting unlicensed weight-management medicines and have taken enforcement action involving unlicensed retatrutide. This page therefore does not provide sales, pricing, ordering, dosing instructions or a route to obtain investigational medicines.</p>
+<p class="lt"><strong>Svarbu:</strong> retatrutidas nėra autorizuotas viešam vartojimui. JK reguliavimo institucijos perspėjo verslus nereklamuoti nelicencijuotų svorio valdymo preparatų ir vykdė teisėsaugos veiksmus dėl nelicencijuoto retatrutido. Todėl šiame puslapyje nepateikiamos kainos, užsakymo galimybės, dozavimo instrukcijos ar būdas įsigyti tiriamuosius vaistus.</p>
+</div>
+</div></section>
+
+<section id="sources"><div class="wrap">
+<h2 class="en">Research & official sources</h2><h2 class="lt">Tyrimų ir oficialūs šaltiniai</h2>
+<div class="two">
+<div class="source-card"><h3>Retatrutide</h3>
+<p><a href="https://www.lilly.com/news/stories/what-to-know-about-retatrutide" target="_blank" rel="noopener">Lilly — What to know about retatrutide</a></p>
+</div>
+<div class="source-card"><h3>UK regulation</h3>
+<p><a href="https://www.gov.uk/government/news/warning-on-promoting-newly-licensed-prescription-only-medicines-and-unlicensed-medicines-for-weight-management" target="_blank" rel="noopener">MHRA / GOV.UK — warning on promoting unlicensed weight-management medicines</a></p>
+<p><a href="https://www.gov.uk/government/news/two-arrested-during-the-mhras-largest-ever-seizure-of-unlicensed-weight-loss-medicines" target="_blank" rel="noopener">MHRA / GOV.UK — enforcement involving unlicensed retatrutide</a></p>
+</div>
+<div class="source-card"><h3>Peptide evidence</h3>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/41476424/" target="_blank" rel="noopener">PubMed — injectable peptide therapy review</a></p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/42578445/" target="_blank" rel="noopener">PubMed — emerging peptides in sports medicine review</a></p>
+</div>
+<div class="source-card"><h3>NAD+</h3>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/41655607/" target="_blank" rel="noopener">PubMed — 2026 systematic review of NAD+ supplementation</a></p>
+</div>
+</div>
+</div></section>
+
+
+<section id="faq"><div class="wrap">
+<h2>FAQ / Frequently Asked Questions</h2>
+<div class="two">
+  <div class="source-card">
+    <h3 class="en">Is this page selling products?</h3>
+    <h3 class="lt">Ar šiame puslapyje parduodami produktai?</h3>
+    <p class="en">No. This page is designed as educational information only and does not provide prices, ordering links or a route to obtain investigational medicines.</p>
+    <p class="lt">Ne. Šis puslapis skirtas tik edukacinei informacijai ir nepateikia kainų, užsakymo nuorodų ar būdo įsigyti tiriamuosius vaistus.</p>
+  </div>
+  <div class="source-card">
+    <h3 class="en">Is retatrutide approved in the UK?</h3>
+    <h3 class="lt">Ar retatrutidas patvirtintas JK?</h3>
+    <p class="en">No. Retatrutide remains investigational and is not authorised for public use.</p>
+    <p class="lt">Ne. Retatrutidas tebėra tiriamasis ir nėra autorizuotas viešam vartojimui.</p>
+  </div>
+  <div class="source-card">
+    <h3 class="en">What does “GLOW SKIN” mean here?</h3>
+    <h3 class="lt">Ką čia reiškia „GLOW SKIN“?</h3>
+    <p class="en">It is a simple label used here for the research grouping GHK‑Cu, BPC‑157 and TB‑500. The individual compounds have different evidence and should not be treated as one proven therapy.</p>
+    <p class="lt">Tai paprastas pavadinimas, kuriuo šiame puslapyje grupuojami GHK‑Cu, BPC‑157 ir TB‑500. Šių junginių įrodymai skiriasi, todėl jų negalima laikyti viena įrodyta terapija.</p>
+  </div>
+  <div class="source-card">
+    <h3 class="en">Are NAD+ benefits guaranteed?</h3>
+    <h3 class="lt">Ar NAD+ nauda garantuota?</h3>
+    <p class="en">No. NAD+ has important biological functions, but benefits from supplementation or injection depend on the intervention and the evidence available for that specific use.</p>
+    <p class="lt">Ne. NAD+ atlieka svarbias biologines funkcijas, tačiau papildų ar injekcijų nauda priklauso nuo konkretaus metodo ir tam turimų įrodymų.</p>
+  </div>
+  <div class="source-card">
+    <h3 class="en">Can this page replace medical advice?</h3>
+    <h3 class="lt">Ar šis puslapis gali pakeisti gydytojo konsultaciją?</h3>
+    <p class="en">No. Personal medical decisions should be discussed with a suitably qualified healthcare professional.</p>
+    <p class="lt">Ne. Asmeninius medicininius sprendimus reikėtų aptarti su kvalifikuotu sveikatos priežiūros specialistu.</p>
+  </div>
+  <div class="source-card">
+    <h3 class="en">Why are sources included?</h3>
+    <h3 class="lt">Kodėl pridėti šaltiniai?</h3>
+    <p class="en">So visitors can check the underlying information themselves rather than relying only on marketing language.</p>
+    <p class="lt">Kad lankytojai galėtų patys patikrinti informaciją ir nepasikliautų vien reklaminiais teiginiais.</p>
   </div>
 </div>
-</section>
+</div></section>
 
-<section id="safety">
-<div class="wrap">
-  <h2 class="en">Important safety information</h2><h2 class="lt">Svarbi saugumo informacija</h2>
-  <div class="notice">
-    <p class="en"><strong>Educational information only.</strong> This website is not medical advice, diagnosis or a treatment recommendation. Some compounds discussed are investigational and may not be authorised for routine medical use in the UK. Always discuss medicines, injections, supplements and unexplained symptoms with a suitably qualified healthcare professional.</p>
-    <p class="lt"><strong>Tik edukacinė informacija.</strong> Ši svetainė nėra medicininė konsultacija, diagnozė ar gydymo rekomendacija. Kai kurie čia aptariami junginiai yra tiriamieji ir gali būti nepatvirtinti įprastam medicininiam naudojimui JK. Vaistus, injekcijas, papildus ir neaiškius simptomus visada aptarkite su kvalifikuotu sveikatos priežiūros specialistu.</p>
-  </div>
+<section id="contacts"><div class="wrap">
+<h2 class="en">General information contacts</h2><h2 class="lt">Bendros informacijos kontaktai</h2>
+<p class="lead en">These contacts are for general information and help navigating educational material only. They are not listed as a route to purchase or obtain investigational medicines.</p>
+<p class="lead lt">Šie kontaktai skirti tik bendrai informacijai ir pagalbai orientuojantis edukacinėje medžiagoje. Jie nėra pateikiami kaip būdas įsigyti tiriamuosius vaistus.</p>
+<div class="contacts">
+<div class="contact"><h3>Rolandas Baranauskas</h3><div class="phone">07576 996570</div><div>London</div><p class="small en">General information contact</p><p class="small lt">Bendros informacijos kontaktas</p></div>
+<div class="contact"><h3>Sigita Peciuliene</h3><div class="phone">07526 221019</div><div>Nottingham</div><p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p></div>
+<div class="contact"><h3>Aurelija Bakunaite</h3><div class="phone">07482 424524</div><div>London</div><p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p></div>
 </div>
-</section>
-
-<section id="contacts">
-<div class="wrap">
-  <h2 class="en">General information contacts</h2><h2 class="lt">Bendros informacijos kontaktai</h2>
-  <p class="lead en">These contacts are listed for general information and navigation of educational material, not as a route to purchase or obtain investigational medicines.</p>
-  <p class="lead lt">Šie kontaktai skirti bendrai informacijai ir pagalbai orientuojantis edukacinėje medžiagoje, o ne tiriamųjų vaistų įsigijimui.</p>
-  <div class="contacts">
-    <div class="contact">
-      <h3>Rolandas Baranauskas</h3>
-      <div class="phone">07576 996570</div>
-      <div>London</div>
-      <p class="small en">General information contact</p><p class="small lt">Bendros informacijos kontaktas</p>
-    </div>
-    <div class="contact">
-      <h3>Sigita Peciuliene</h3>
-      <div class="phone">07526 221019</div>
-      <div>Nottingham</div>
-      <p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p>
-    </div>
-    <div class="contact">
-      <h3>Aurelija Bakunaite</h3>
-      <div class="phone">07482 424524</div>
-      <div>UK</div>
-      <p class="small en">Information support</p><p class="small lt">Informacinė pagalba</p>
-    </div>
-  </div>
-</div>
-</section>
+</div></section>
 </main>
 
-<footer>
-<div class="wrap">
-  <p>Peptide & Wellness Information UK • Science-based educational information</p>
-  <p class="small en">Before publishing, add links to primary scientific sources and review the page against current UK advertising and medicines rules.</p>
-  <p class="small lt">Prieš publikuojant pridėkite nuorodas į pirminius mokslinius šaltinius ir patikrinkite puslapį pagal tuo metu galiojančias JK vaistų ir reklamos taisykles.</p>
-</div>
-</footer>
+<footer><div class="wrap">
+<p><strong>Educational information only.</strong> This website is not medical advice, diagnosis or a treatment recommendation. Always consult a suitably qualified healthcare professional about medicines, injections, supplements and unexplained symptoms.</p>
+<p class="small">Content reviewed against sources available in September 2026.</p>
+</div></footer>
 
 <script>
 function setLang(lang){
-  document.body.classList.toggle('show-lt', lang === 'lt');
-  document.getElementById('enBtn').classList.toggle('active', lang === 'en');
-  document.getElementById('ltBtn').classList.toggle('active', lang === 'lt');
+ document.body.classList.toggle('show-lt',lang==='lt');
+ document.getElementById('enBtn').classList.toggle('active',lang==='en');
+ document.getElementById('ltBtn').classList.toggle('active',lang==='lt');
 }
 </script>
 </body>
